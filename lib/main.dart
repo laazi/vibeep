@@ -116,8 +116,13 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
             child: ElevatedButton(
               onPressed: _handleButtonPress,
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 48),
-                textStyle: const TextStyle(fontSize: 24),
+                textStyle: const TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.zero,
+                ),
               ),
               child: const Text('TERAZ'),
             ),
